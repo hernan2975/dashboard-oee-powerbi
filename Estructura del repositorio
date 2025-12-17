@@ -1,0 +1,8 @@
+dashboard-oee-powerbi/
+├── data/
+│   └── oee_data_sample.csv
+├── docs/
+│   └── modelo_relacional.drawio.png
+├── OEE_Analysis.pbix
+├── README.md
+└── LICENCE
