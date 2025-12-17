@@ -1,0 +1,16 @@
+1. Abre Power BI Desktop (gratis).
+2. Inicio → Obtener datos → Texto/CSV → selecciona oee_data_sample.csv.
+3. En Power Query:
+Cambia tipos: fecha → Date, los demás → Whole/Decimal Number.
+Añade columna personalizada:
+Disponibilidad = [tiempo_operativo_min] / [tiempo_planificado_min]
+Calidad = [produccion_buena_unidades] / [produccion_unidades]
+OEE = [Disponibilidad] * [Calidad] * ([produccion_unidades]/[tiempo_operativo_min]) / ([produccion_unidades]/[tiempo_operativo_min]) (ajusta según estándar real)
+4. Cierra y aplica.
+5. Crea medidas en DAX (opcional, pero potente):
+```bash
+OEE Promedio = AVERAGE('OEE'[OEE])
+Disponibilidad Promedio = AVERAGE('OEE'[Disponibilidad])
+```
+6. Diseña página: tarjetas (OEE promedio), gráfico de líneas (OEE por fecha), tabla (detalle).
+7. Guarda como OEE_Analysis.pbix.
