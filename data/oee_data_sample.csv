@@ -1,0 +1,5 @@
+fecha,maquina,turno,tiempo_planificado_min,tiempo_operativo_min,tiempo_calidad_min,produccion_unidades,produccion_buena_unidades
+2025-12-01,M1,Maniana,480,420,390,1050,975
+2025-12-01,M1,Tarde,480,400,360,1000,900
+2025-12-01,M2,Maniana,480,450,420,900,840
+2025-12-02,M1,Maniana,480,410,380,1025,950
